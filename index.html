@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="icon" type="image/jpg" href="images/myphoto.jpg">
+
+  <!-- font awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- css bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <style>
+    *{
+      font-family: 'Times New Roman', Times, serif;
+    }
+    li:hover {
+      border-bottom: 2px solid brown;
+      border-width: 50%;
+    }
+
+    .skilllink:hover {
+      border-bottom: 2px solid brown;
+      border-width: 50%;
+    }
+
+    .homeprofile {
+      animation-name: profile;
+      animation-duration: 3s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes profile {
+      0% {
+        transform: translateX(0px);
+      }
+
+      25% {
+        transform: translateX(50px);
+      }
+
+      50% {
+        transform: translateX(70px);
+      }
+
+      100% {
+        transform: translateX(0px);
+      }
+    }
+
+    .profilename {
+      animation-name: profilename;
+      animation-duration: 3s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes profilename {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(0.5);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-light">
+  <!-- nav bar start -->
+  <nav class="navbar navbar-expand-lg bg-light shadow fw-semibold sticky-top">
+    <div class="container m-lg-3">
+      <a class="my-portfolio text-decoration-none fs-4 " style="color:brown;" href="#">Shoon Lae Oo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse fs-5  " id="navbarNav">
+        <ul class="navbar-nav mx-auto ">
+          <li class="nav-item pe-4">
+            <a class="nav-link active" style="color: brown;" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item pe-4">
+            <a class="nav-link" style="color: brown;" href="#about">About</a>
+          </li>
+          <li class="nav-item pe-4">
+            <a class="nav-link" style="color: brown;" href="#service">Services</a>
+          </li>
+          <li class="nav-item pe-4">
+            <a class="nav-link" style="color: brown;" href="#project">Projects</a>
+          </li>
+          <li class="nav-item pe-4">
+            <a class="nav-link" style="color: brown;" href="#skill">Skills</a>
+          </li>
+          <li class="nav-item pe-4">
+            <a class="nav-link" style="color: brown;" href="#contact">Contacts</a>
+          </li>
+        </ul>
+      </div>
+      <img src="images/myphoto.jpg" alt="" class="rounded-circle homeprofile" style="width: 60px;height:50px;">
+      <span class="homeprofile ms-2" style="color: brown;">SLO</span>
+    </div>
+  </nav>
+  <!-- nav bar end -->
+
+  <!-- home start -->
+  <div class="home px-5 mb-5 " id="home">
+    <div class="container-lg w-75 align-content-center">
+      <div class="row mt-5">
+        <div class="col-md-6 mt-5 d-flex justify-content-center">
+          <img src="images/myphoto1.jpg" class="rounded-circle homeprofile" width="50%" height="100%">
+        </div>
+        <div class="col-md-6 mt-5 " style="height: 50%;">
+          <p class=" text-muted mb-0">Hello,my name is </p>
+          <h3 style="color: rgb(190, 86, 86);" class="profilename">Shoon Lae Oo</h3>
+          <h4>And I'm a <span style="color:brown">Web Developer Student</span></h4>
+          <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi quis repellat, minus,
+            sed iusto adipisci necessitatibus consectetur eaque deserunt quia ad ipsum reprehenderit! Ullam magni
+            aspernatur sapiente vero recusandae nemo.</p>
+          <button class="px-3 rounded text-light py-1" style="background-color: brown;border-color: brown;">My
+            Cv</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- home end -->
+
+  <!-- About start -->
+  <div class="skill py-5 " id="about">
+    <div class="container-lg">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-title text-center">
+            <h1 class="fw-bold" style="color: brown;">AboutMe</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="about-text">
+            <h3 class="fs-3 mb-3 mt-3" style="color:#540b0e">Student</h3>
+          </div>
+          <p class="text-muted">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore saepe, dolorem sit reiciendis fuga tempora
+            eligendi! Recusandae, voluptatem vitae dolorum repudiandae similique quam aperiam quia ut! Beatae commodi
+            laborum nisi!
+          </p>
+          <div class="row">
+            <div class="col ms-5 mt-2">
+              <a href="https://www.facebook.com/shoon.oo.777?mibextid=ZbWKwL" style="color:brown;"><i
+                  class="fa-brands fa-square-facebook pe-3 fs-3"></i></a>
+              <a href="https://www.instagram.com/shoonlaeoo7?igsh=ZGE4YWMxajltOW5" style="color:brown;"><i
+                  class="fa-brands fa-square-instagram pe-3 fs-3"></i></a>
+              <a href="https://github.com/Shoon1999" style="color:brown;"><i
+                  class="fa-brands fa-github pe-3 fs-3"></i></a>
+              <a href="https://join.skype.com/invite/yJxjQQCU6v06" style="color:brown;"><i
+                  class="fa-brands fa-skype pe-3 fs-3"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- about skills start -->
+        <div class="col-md-6" id="skill">
+          <div class="row">
+            <div class="col fs-3 mt-3">
+              <div class="row">
+                <div class="col-4">
+                  <a href="#aboutskills #about" class="text-decoration-none skilllink" style="color: #540b0e"
+                    onclick="showskills()">Skills</a>
+                </div>
+                <div class="col-4">
+                  <a href="#experiences #about" class="text-decoration-none skilllink" style="color: #540b0e"
+                    onclick="showexperiences()">Experiences</a>
+                </div>
+                <div class="col-4">
+                  <a href="#educations #about" class="text-decoration-none skilllink" style="color: #540b0e"
+                    onclick="showeducations()">Educations</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <section class="skills" id="aboutskills">
+                <h6 class="mt-3" style="color:brown;">HTML&nbsp;<i class="fa-brands fa-html5"></i></h6>
+                <div class="progress mt-3" role="progressbar" aria-label="Example 1px high" aria-valuenow="25"
+                  aria-valuemin="0" aria-valuemax="100" style="height: 7px;color: brown;">
+                  <div class="progress-bar" style="width: 80%;background-color: brown;"></div>
+                </div>
+                <h6 class="mt-3" style="color:brown;">CSS&nbsp;<i class="fa-brands fa-css3"></i></h6>
+                <div class="progress mt-3" role="progressbar" aria-label="Example 1px high" aria-valuenow="25"
+                  aria-valuemin="0" aria-valuemax="100" style="height: 7px;color: brown;">
+                  <div class="progress-bar" style="width: 75%;background-color: brown;"></div>
+                </div>
+                <h6 class="mt-3" style="color:brown;">JavaScript&nbsp;<i class="fa-brands fa-js"></i></h6>
+                <div class="progress mt-3" role="progressbar" aria-label="Example 1px high" aria-valuenow="25"
+                  aria-valuemin="0" aria-valuemax="100" style="height: 7px;color: brown;">
+                  <div class="progress-bar" style="width: 50%;background-color: brown;"></div>
+                </div>
+                <h6 class="mt-3" style="color:brown;">Bootstrap&nbsp;<i class="fa-brands fa-bootstrap"></i></h6>
+                <div class="progress mt-3" role="progressbar" aria-label="Example 1px high" aria-valuenow="25"
+                  aria-valuemin="0" aria-valuemax="100" style="height: 7px;color: brown;">
+                  <div class="progress-bar" style="width: 75%;background-color: brown;"></div>
+                </div>
+                <h6 class="mt-3" style="color:brown;">Mysql&nbsp;<i class="fa-solid fa-database"></i></h6>
+                <div class="progress mt-3" role="progressbar" aria-label="Example 1px high" aria-valuenow="25"
+                  aria-valuemin="0" aria-valuemax="100" style="height: 7px;color: brown;">
+                  <div class="progress-bar" style="width: 65%;background-color: brown;"></div>
+                </div>
+                <h6 class="mt-3" style="color:brown;">Php&nbsp;<i class="fa-brands fa-php"></i></h6>
+                <div class="progress mt-3" role="progressbar" aria-label="Example 1px high" aria-valuenow="25"
+                  aria-valuemin="0" aria-valuemax="100" style="height: 7px;color: brown;">
+                  <div class="progress-bar" style="width: 30%;background-color: brown;"></div>
+                </div>
+                <h6 class="mt-3" style="color:brown;">Laravel&nbsp;<i class="fa-brands fa-laravel"></i></h6>
+                <div class="progress mt-3" role="progressbar" aria-label="Example 1px high" aria-valuenow="25"
+                  aria-valuemin="0" aria-valuemax="100" style="height: 7px;color: brown;">
+                  <div class="progress-bar" style="width: 25%;background-color: brown;"></div>
+                </div>
+              </section>
+            </div>
+            <div class="col-4">
+              <section class="expriences" id="experiences" style="display:none ;">
+                <h6 class="mt-3" style="color:brown;">2022-2023</h6>
+                <p class="text-muted">Prolog</p>
+                <h6 class="mt-3" style="color:brown;">2022-2023</h6>
+                <p class="text-muted">Elrctronics Management System(DBMS)</p>
+                <h6 class="mt-3" style="color:brown;">2023-2024</h6>
+                <p class="text-muted">Voting System(Java Se)</p>
+                <h6 class="mt-3" style="color:brown;">2023-2024</h6>
+                <p class="text-muted">Key Logger(IS)</p>
+                <h6 class="mt-3" style="color:brown;">2018-2019</h6>
+                <p class="text-muted">Online Shop System(C#)</p>
+              </section>
+            </div>
+            <div class="col-4">
+              <section class="educations" id="educations" style="display: none;">
+                <h6 class="mt-3" style="color:brown;">2024-Present</h6>
+                <p class="text-muted">UCSP(University of Computer Studies Pyay)</p>
+                <h6 class="mt-3" style="color:brown;">2024-Present</h6>
+                <p class="text-muted">Studied at Soft-Guide</p>
+              </section>
+            </div>
+          </div>
+        </div>
+        <!-- about skills end -->
+      </div>
+    </div>
+  </div>
+  <!-- About end -->
+
+  <!-- my expertise start -->
+  <div class="service" id="service">
+    <div class="container-lg">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-title text-center">
+            <h1 class="fw-bold" style="color: brown;">My Expertise</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row p-3 d-flex justify-content-center">
+        <div class="col bg-white me-3">
+          <div class="row mt-4 text-center" style="color:brown;">
+            <i class="fa-solid fa-laptop-code fs-1"></i>
+          </div>
+          <div class="row mt-4 text-center">
+            <h3 class="mb-2" style="color: brown;">Web Development</h3>
+            <p class="p-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, fugiat hic. Eum vitae non
+              repellat totam, mollitia architecto fugiat doloribus nostrum atque praesentium aliquid animi voluptatibus
+              corporis ipsa quos. Dolorem?</p>
+          </div>
+        </div>
+        <div class="col bg-white me-3 ">
+          <div class="row mt-4 text-center" style="color:brown;">
+            <i class="fa-solid fa-hands-holding-child fs-1"></i>
+          </div>
+          <div class="row mt-4 text-center">
+            <h3 class="mb-2" style="color: brown;">Teaching & Learning</h3>
+            <p class="p-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, fugiat hic. Eum vitae non
+              repellat totam, mollitia architecto fugiat doloribus nostrum atque praesentium aliquid animi voluptatibus
+              corporis ipsa quos. Dolorem?</p>
+          </div>
+        </div>
+        <div class="col bg-white me-3">
+          <div class="row mt-4 text-center" style="color:brown;">
+            <i class="fa-regular fa-lightbulb fs-1"></i>
+          </div>
+          <div class="row mt-4 text-center">
+            <h3 class="mb-2" style="color: brown;">Creative & New Ideas</h3>
+            <p class="p-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, fugiat hic. Eum vitae non
+              repellat totam, mollitia architecto fugiat doloribus nostrum atque praesentium aliquid animi voluptatibus
+              corporis ipsa quos. Dolorem?</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="row p-3 d-flex justify-content-center">
+        <div class="col bg-white me-3">
+          <div class="row mt-4 text-center">
+            <i class="fa-solid fa-champagne-glasses fs-1" style="color: brown;"></i>
+          </div>
+          <div class="row mt-4 text-center">
+            <h3 class="mb-2" style="color: brown;">Better Communications</h3>
+            <p class="p-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, fugiat hic. Eum vitae non
+              repellat totam, mollitia architecto fugiat doloribus nostrum atque praesentium aliquid animi voluptatibus
+              corporis ipsa quos. Dolorem?</p>
+          </div>
+        </div>
+        <div class="col bg-white me-3 ">
+          <div class="row mt-4 text-center" style="color:brown;">
+            <i class="fa-solid fa-magnifying-glass-chart fs-1"></i>
+          </div>
+          <div class="row mt-4 text-center">
+            <h3 class="mb-2" style="color: brown;">Leading & Analytical</h3>
+            <p class="p-4">Lorem ipsum dolor, sit amet consectetur adipiscing elit. Autem, fugiat hic. Eum vitae non
+              repellat totam, mollitia architecto fugiat doloribus nostrum atque praesentium aliquid animi voluptatibus
+              corporis ipsa quos. Dolorem?</p>
+          </div>
+        </div>
+        <div class="col bg-white me-3">
+          <div class="row mt-4 text-center" style="color:brown;">
+            <i class="fa-solid fa-bolt fs-1"></i>
+          </div>
+          <div class="row mt-4 text-center">
+            <h3 class="mb-2" style="color: brown;">Active involved with team members</h3>
+            <p class="p-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, fugiat hic. Eum vitae non
+              repellat totam, mollitia architecto fugiat doloribus nostrum atque praesentium aliquid animi voluptatibus
+              corporis ipsa quos. Dolorem?</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- my expertise end -->
+
+  <!-- latest project start -->
+  <div class="project" id="project">
+    <div class="container-lg">
+      <div class="row mt-2 justify-content-center">
+        <div class="col-lg-8">
+          <div class="section-title text-center">
+            <h1 class="fw-bold" style="color: brown;">Latest Projects</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5 justify-content-between">
+        <div class="col-4 w-25">
+          <div class="card shadow">
+            <img src="images/card4.png" style="height: 200px;" class=" w-100 card-img-top" alt="...">
+            <div class="card-body" style="background-color:rgb(233, 228, 228);">
+              <h5 class="pt-4 text-center" style="color: #540b0e;">Using Flex Box</h5>
+              <p class="text-center ">
+                <i class="fa-regular fa-hand-point-right " style="color: #540b0e;"></i>
+                <a href="https://github.com/Shoon1999/Soft-guide-assign-card4" class="text-decoration-none"
+                  style="color: #540b0e;">Live Demo</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card shadow">
+            <img src="images/card3.png" style="height: 200px;" class="w-100 img-fluid card-img-top" alt="...">
+            <div class="card-body" style="background-color:rgb(233, 228, 228);">
+              <h5 class="pt-4 text-center" style="color: #540b0e;">Using Flex Box and Button Position</h5>
+              <p class="text-center">
+                <i class="fa-regular fa-hand-point-right " style="color: #540b0e;"></i>
+                <a href="https://github.com/Shoon1999/Soft-guide-assign-card3" class="text-decoration-none"
+                  style="color: #540b0e;">Live Demo</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card shadow">
+            <img src="images/card2.png" style="height: 200px;" class="w-100 img-fluid card-img-top" alt="...">
+            <div class="card-body" style="background-color:rgb(233, 228, 228);">
+              <h5 class="pt-4 text-center" style="color: #540b0e;">Using card with CSS style</h5>
+              <p class="text-center">
+                <i class="fa-regular fa-hand-point-right " style="color: #540b0e;"></i>
+                <a href="https://github.com/Shoon1999/Soft-guide-assign-card2" class="text-decoration-none"
+                  style="color: #540b0e;">Live Demo</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5 justify-content-between">
+        <div class="col-4 w-25">
+          <div class="card shadow">
+            <img src="images/card1.png" style="height: 200px;" class=" w-100 card-img-top" alt="...">
+            <div class="card-body" style="background-color:rgb(233, 228, 228);">
+              <h5 class="pt-4 text-center" style="color: #540b0e;">Card Design</h5>
+              <p class="text-center">
+                <i class="fa-regular fa-hand-point-right " style="color: #540b0e;"></i>
+                <a href="https://github.com/Shoon1999/Soft-guide-Intern" class="text-decoration-none"
+                  style="color: #540b0e;">Live Demo</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card shadow">
+            <img src="images/grid.png" style="height: 200px;" class="w-100 img-fluid card-img-top" alt="...">
+            <div class="card-body" style="background-color:rgb(233, 228, 228);">
+              <h5 class="pt-4 text-center" style="color: #540b0e;">Using Grid</h5>
+              <p class="text-center">
+                <i class="fa-regular fa-hand-point-right " style="color: #540b0e;"></i>
+                <a href="https://github.com/Shoon1999/soft-guide-assign-usegrid" class="text-decoration-none"
+                  style="color: #540b0e;">Live Demo</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card shadow">
+            <img src="images/Screenshot (9).png" style="height: 200px;" class="w-100 img-fluid card-img-top" alt="...">
+            <div class="card-body" style="background-color:rgb(233, 228, 228);">
+              <h5 class="pt-4 text-center" style="color: #540b0e;">Various of Buttons Designs</h5>
+              <p class="text-center">
+                <i class="fa-regular fa-hand-point-right " style="color: #540b0e;"></i>
+                <a href="https://github.com/Shoon1999/Soft-ruide-assing-btn" class="text-decoration-none" style="color: #540b0e;">Live Demo</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- latest project end -->
+  <!-- contact start -->
+  <div class="contact " id="contact">
+    <div class="row  mt-5">
+      <div class="col-6 mt-5 d-flex justify-content-center">
+        <div class="section-title">
+          <h2 class="fw-bold me-5" style="color: brown;">Contacts</h2>
+          <p class="mt-3"><i class="fa-solid fa-paper-plane me-2 fs-6" style="color:brown;"></i>
+            <span class="fs-6" style="color: brown;">shoonlaeoo063@gmail.com</span>
+          </p>
+          <p><i class="fa-solid fa-square-phone me-2 fs-6" style="color:brown;"></i>
+            <span class="fs-6" style="color: brown;">09987800938</span>
+          </p>
+          <p><i class="fa-solid fa-map-location-dot  me-2 fs-6" style="color:brown;"></i>
+            <span class="fs-6" style="color: brown;">Pyay</span>
+          </p>
+          <h4 style="color:#540b0e">Connect via social links</h4>
+          <p> <a href="https://www.facebook.com/shoon.oo.777?mibextid=ZbWKwL" style="color:brown;"><i
+                class="fa-brands fa-square-facebook pe-3 fs-3"></i></a>
+            <a href="https://www.instagram.com/shoonlaeoo7?igsh=ZGE4YWMxajltOW5" style="color:brown;"><i
+                class="fa-brands fa-square-instagram pe-3 fs-3"></i></a>
+            <a href="https://github.com/Shoon1999" style="color:brown;"><i
+                class="fa-brands fa-github pe-3 fs-3"></i></a>
+            <a href="https://join.skype.com/invite/yJxjQQCU6v06" style="color:brown;"><i
+                class="fa-brands fa-skype pe-3 fs-3"></i></a>
+          </p>
+        </div>
+      </div>
+      <div class="col-6 d-flex justify-content-center">
+        <div class="row mt-4 w-50">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label fs-5" style="color:brown;">Name</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3">
+              <label for="Email1" class="form-label fs-5" style="color:brown;">Email</label>
+              <input type="email" class="form-control" id="Email1">
+              <div class="form-text" style="color:#540b0e">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label fs-5" style="color:brown;">Subject</label>
+              <input type="text" class="form-control" id="subject">
+            </div>
+            <div class="form-floating mb-3">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                style="height: 100px"></textarea>
+              <label for="floatingTextarea2" style="color:brown;">Comments</label>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button class="btn" style="background-color: brown;color: white;">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- contact end -->
+
+  <!-- footer start -->
+  <div class="py-3 mt-4 bg-black">
+    <div class="container-lg  ">
+      <div class="row justify-content-center ">
+        <div class="col-lg-12">
+          <div class="section-title text-center">
+            <h4 class="fw-bold" style="color: brown;">Yesterday Code,Today Code,Tomorrow Code &nbsp;| Everyday Code</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer end -->
+  <script>
+    var sectionexperiences = document.getElementById("experiences");
+    var sectionskills = document.getElementById("aboutskills");
+    var sectioneducations = document.getElementById("educations");
+    function showskills() {
+      sectionskills.style.cssText = "display:block";
+      sectionexperiences.style.cssText = "display:none;"
+      sectioneducations.style.cssText = "display:none";
+    }
+    function showexperiences() {
+      sectionskills.style.cssText = "display:none";
+      sectionexperiences.style.cssText = "display:block";
+      sectioneducations.style.cssText = "display:none";
+    }
+    function showeducations() {
+      sectionskills.style.cssText = "display:none";
+      sectionexperiences.style.cssText = "display:none;"
+      sectioneducations.style.cssText = "display:block;"
+    }
+  </script>
+  <!-- js cdn link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
